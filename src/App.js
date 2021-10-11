@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './App.scss'
-import { Route } from 'react-router-dom'
+import { Route, NavLink } from 'react-router-dom'
 import About from './About/About'
 import Cars from './Cars/Cars'
 
@@ -16,23 +16,20 @@ class App extends Component {
             <
             li >
             <
-            a href = "/" > Home < /a> <
+            NavLink to = "/" > Home < /NavLink> <
             /li> <
             li >
             <
-            a href = "/about" > About < /a> <
+            NavLink to = "/about" > About < /NavLink> <
             /li> <
             li >
             <
-            a href = "/cars" > Cars < /a> <
+            NavLink to = "/cars" > Cars < /NavLink> <
             /li> <
             /ul> <
-            /nav>
-
-            <
+            /nav> <
             hr / >
-
-            { /*localhost:3000*/ } <
+            <
             Route path = "/"
             exact render = {
                 () => < h1 > Home Page < /h1>} / >
